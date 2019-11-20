@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url(reset.css);
+
+@media all and (max-width:360px){
+    html,body,input,button{font-size:10px;}
+    
+    .M_logo a{background-size:100%}
+    
+    .visual,
+    .visualList li img{height:330px;}
+    
+    .bestItemList ul{width:550%}
+    .bestItemList ul > li > a{height:180px;}
+    
+    .collection .photo{height:101px;}
+    .collection .txt .tit{line-height:30px;}
+    .collection .photoOn ul{height:237px;}
+    
+    .hotListwrap, .nowListwrap{margin-top:45px}
+
+    .hotList > li > a,
+    .nowList > li > a{height:180px;}
+    
+    .notice{width:80%;}
+    .notice .noticeTit{width:40%;}
+    .notice ul{width:60%; left:40%}
+    
+    .contact{width:20%; float:left}
+    .contact a{width:50%;}
+    
+    .aside > div{height:280px; line-height:280px;}
+    
+    #footer{height:130px;}
+}

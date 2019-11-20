@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import url(../css/reset.css);
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+#container{width:100%; position:relative;}
+.visualWrap{width:100%; position:relative; background-color:#000; overflow-x: hidden}
+
+.visual{width:1800px; height: 470px; margin:0 auto; position: relative; overflow: hidden}
+.visual .visualSlide{width:100%; height: 470px; position: absolute; top:0; left:0}
+.visual .visualSlide .visualList{width:100%; height: 470px;}
+.visual .visualSlide .visualList li{position: absolute; top:0; left:0;}
+
+.visualImg{width:100%; height: 470px; position: relative; display:none; overflow: hidden}
+.visualImg.on{display:block;}
+.visual1{background:url(../image/visual_img1.jpg) no-repeat 0 0;}
+.visual2{background:url(../image/visual_img2.jpg) no-repeat 0 0;}
+.visual3{background:url(../image/visual_img3.jpg) no-repeat 0 0;}
+
+.visualIntro{background-color:rgba(0,0,0,0.5); width:100%; height:70px; text-align: center; padding-top:11px; position: absolute; bottom:0; left:0; z-index: 10; display:none}
+.visualIntro.on{display:block}
+
+.visualIntro .mBox1{width:40px; height: 14px; display:inline-block; font-size:10px; background:#e4007f; border-radius:20px; text-align: center; color:#fff; line-height: 14px; vertical-align:top; margin-top:7px}
+.visualIntro .mBox2{width:40px; height: 14px; display:inline-block; font-size:10px; background:#ba26ff; border-radius:20px; text-align: center; color:#fff; line-height: 14px; vertical-align:top; margin-top:7px}
+
+.visualIntro .visualTit{font-size:18px; color:#fff}
+.visualIntro p{font-size:12px; color:#fff}
+
+.visualBtn{position: absolute; top:0; left:50%; margin-left:-51px}
+.visualBtn a{display:inline-block; width:10px; height: 10px; font-size:0; margin-left:10px}
+.visualBtn a.stop{background-position:-90px 0; margin-left:0}
+.visualBtn a.point{background-color:#c3c3c3; border-radius:10px}
+.visualBtn a.point.on{background-color:#555}
+.visualBtn a.play{background-position:-80px 0;}
+
+.visualControl{}
+.visualControl a{width:40px; height: 70px; display:block; font-size:0; margin-top:-35px}
+.visualControl a.prev{background-position:0 -13px; position: absolute; left:0; top:50%}
+.visualControl a.next{background-position:-40px -13px; position: absolute; right:0; top:50%}
+
+.visualControl a.prev:hover{background-position:-80px -13px;}
+.visualControl a.next:hover{background-position:-120px -13px;}
+.visualBtn a.stop:hover{background-position:-110px 0;}
+.visualBtn a.play:hover{background-position:-100px 0;}
+/*visual e*/
+
+.section{position: relative; width:100%}
+.contTit{font-size:50px; color:#fff; text-align: center; width: 100%; height:250px; line-height: 250px; margin-top:40px; background-color:rgba(0,0,0,0.5)}
+
+.section .performance{position: relative; width:100%}
+.performanceTit_bg{background:url(../image/performanceTit_bg.jpg) no-repeat 0 0; background-color:#fff; width:100%; height: 250px; background-size: cover; background-attachment:fixed; position: relative}
+
+.performanceTit_bg .more{width:200px; height: 50px; background-color:#e4007f; position: absolute; right:390px; top:50%; margin-top:-25px;}
+
+.performanceTit_bg .more a{font-size:18px; color:#fff; text-align: center; display:block; height: 50px; line-height: 50px; text-decoration: none; text-indent:-20px; -webkit-transition:text-indent 0.4s; -moz-transition:text-indent 0.4s; -o-transition:text-indent 0.4s; transition:text-indent 0.4s;}
+.performanceTit_bg .more .line{font-size:0; display:block; width:20px; height: 1px; background-color:#fff; position: absolute; top:50%; right:30%; -webkit-transition:all 0.4s; -moz-transition:all 0.4s; -o-transition:all 0.4s; transition:all 0.4s;}
+
+.performanceTit_bg .more:hover a{text-indent:-40px}
+.performanceTit_bg .more:hover .line{width:40px; right:25%}
+
+
+.performanceWrap{width:1200px; height: 640px; margin:0 auto; position: relative}
+
+.performanceWrap .performanceImgSlide{width:1200px; height: 640px; position:relative; overflow:hidden}
+.performanceImg{width:1730px; position:absolute; bottom:0; left:0}
+.performanceImg li{float: left; margin-top:307px}
+.performanceImg li:not(.on) a img{width:250px; height: 334px; margin-top:307px; cursor:default}
+.performanceImg li.on a img{width:480px; height: 641px;}
+
+.performanceWrap .performanceIntroSlide{position: absolute; top:0; left:480px; width:720px; height: 305px; overflow: hidden}
+.performanceIntro{position: relative; width:4320px}
+.performanceIntro .performanceTxt{width:720px; height: 305px; float: left; padding:55px 50px; position: absolute; left:0; top:0; opacity:0; transition: opacity 0.3s ease} 
+.performanceIntro .performanceTxt.on{opacity:1}
+
+.performanceIntro .performanceTxt a{color:#000; font-size:24px; display:inline-block; margin-bottom:15px; font-weight: 400; text-decoration: none}
+.performanceIntro .performanceTxt a:after{background:url(../image/performanceTxt_circle.png) no-repeat 0 0; height: 72px; width:72px; content:''; display:block; margin:-55px 0 0 -30px}
+
+.performanceIntro .performanceTxt p{line-height: 24px; font-weight: 500}
+.performanceIntro .performanceTxt p span{margin-left:20px; font-weight: 400}
+
+.performanceWrap .contBtn{position: absolute; top:30px; right:50px;}
+
+.contBtn span{font-size:0}
+.contBtn .stop{background-position: 0 -83px}
+.contBtn .play{background-position: -20px -83px}
+
+.contBtn .stop:hover{background-position: -40px -103px}
+.contBtn .play:hover{background-position: -60px -103px}
+
+
+.contctrl span{font-size:0;}
+.performanceWrap > .contctrl > a{position: absolute; top:50%; margin-top:-35px; display:block; width:70px; height: 70px; background-color:#fff; border-radius:50%; box-shadow: 1px 1px 2px rgba(0,0,0,0.6);}
+
+.contctrl .left{left:-35px;}
+.contctrl .right{right:-35px;;}
+
+.contctrl .left:before{content:''; display:block; width:20px; height: 20px; border:2px solid #626262; border-right: none; border-top:none; transform: rotate(45deg); margin:25px 0 0 30px}
+.contctrl .right:before{content:''; display:block; width:20px; height: 20px; border:2px solid #626262; border-left: none; border-bottom:none; transform: rotate(45deg); margin:25px 0 0 20px}
+
+.contctrl .left:hover{animation:arrow1 1.6s ease-in-out infinite;}
+.contctrl .right:hover{animation:arrow2 1.6s ease-in-out infinite;}
+
+@keyframes arrow1{
+    0%{transform:translate(0)}   
+    50%{transform:translate(-10px); opacity: 0.8;}   
+    100%{transform:translate(0);}    
+}
+@keyframes arrow2{
+    0%{right:-35px}   
+    50%{right:-45px; opacity: 0.8;}   
+    100%{right:-35px;} 
+}
+
+.section .movie{position: relative; width:100%}
+.movieTit_bg{background:url(../image/movieTit_bg.jpg) no-repeat 0 0; width:100%; height: 250px; background-size: cover; background-attachment:fixed; position: relative}
+
+.movieTit_bg .more{width:200px; height: 50px; background-color:#f6b402; position: absolute; right:390px; top:50%; margin-top:-25px;}
+
+.movieTit_bg .more a{font-size:18px; color:#fff; text-align: center; display:block; height: 50px; line-height: 50px; text-decoration: none; text-indent:-20px; transition:text-indent 0.4s}
+.movieTit_bg .more .line{font-size:0; display:block; width:20px; height: 1px; background-color:#fff; position: absolute; top:50%; right:30%; transition:all 0.4s}
+
+.movieTit_bg .more:hover a{text-indent:-40px}
+.movieTit_bg .more:hover .line{width:40px; right:25%}
+
+.movieWrap{width: 1200px; margin:0 auto; position: relative; padding:80px 0 40px 0}
+.movieSlide{position: relative; height: 445px; width:1200px; overflow: hidden}
+.movieSlide .movieList{width:3785px; height: 445px; position: absolute; left:0; top:0}
+.movieSlide .movieList li{float: left; margin-right: 28px}
+.movieSlide .movieList li:last-child{margin-right: 0px}
+
+.movieImg{position: relative}
+.movieImg a{}
+.movieImg a img{}
+
+.movieImg:hover .movieOn{opacity:1}
+.movieImg:hover .movieOn:before{left:0}
+.movieImg:hover .movieOn:after{right:0}
+.movieImg:hover .movieOn strong:before{top:0}
+.movieImg:hover .movieOn strong:after{bottom:0}
+
+.movieOn:before{width:279px; height: 3px; background-color:#f6b402; content:''; display:block; position:absolute; top:0; left:-279px; transition:left 0.3s}
+.movieOn:after{width:279px; height: 3px; background-color:#f6b402; content:''; display:block; position:absolute; bottom:0; right:-279px; transition:right 0.3s}
+.movieOn strong:before{height:373px; width: 3px; background-color:#f6b402; content:''; display:block; position:absolute; top:-373px; left:0; transition:top 0.3s}
+.movieOn strong:after{height:373px; width: 3px; background-color:#f6b402; content:''; display:block; position:absolute; bottom:-373px; right:0; transition:bottom 0.3s}
+
+.movieOn{position: absolute; top:0; left:0; width:279px; height: 373px; background-color:rgba(0,0,0,0.5); text-align: center; padding-top:90px; opacity: 0; transition: opacity 0.5s; overflow: hidden}
+.movieOn strong{color:#f6b402; display:block; font-size:18px; margin-bottom:50px}
+.movieOn em{color:#fff; display:block;}
+.movieOn span{width:80px; height: 30px; color:#fff; border:1px solid #555; display:inline-block; text-align: center; line-height: 28px; margin:30px 0 0 10px; transition:all 0.3s ease-in-out; background-color:rgba(0,0,0,0.5)}
+.movieOn .moviego{background-color:#f6b402; border:none; margin-left:0;}
+
+.movieOn .moviego:hover{background-color:#d39a00;}
+.movieOn span:nth-of-type(2):hover{background-color:#555; border:none;}
+
+.movieIntro{margin-top:20px}
+.movieIntro strong{display:block; color:#000; font-size:18px}
+.movieIntro span{display:block; margin-top:5px}
+
+.movieWrap .contBtn{position: absolute; top:30px; right:50px;}
+.movieWrap > .contctrl > a{position: absolute; top:50%; margin-top:-35px; display:block; width:70px; height: 70px; background-color:#fff; border-radius:50%; box-shadow: 1px 1px 2px rgba(0,0,0,0.6);}
+
+.contBtn a{width:20px; height: 20px; display:inline-block; vertical-align:middle; margin-left:8px}
+.contBtn .point{width:10px; height: 10px; border-radius:10px; background-color:#c3c3c3;}
+.contBtn .point.on{background-color:#555;}
+
+.class{width:1200px; margin:0 auto; position: relative; border-top:1px solid #555; border-bottom:1px solid #555; height: 362px}
+.classTit{font-size:24px; width:46px; margin:30px; color:#000}
+
+.classmore{position: absolute; right:42px; top:35px; width:24px; height: 24px; text-align: center; cursor:pointer}
+.classmore a{font-size:0}
+.classmore .line1{display:inline-block; width: 2px; height: 24px; background-color:#555; transform:rotate(0deg); transition: all 1s ease-in-out}
+.classmore .line2{display:inline-block; width: 2px; height: 24px; background-color:#555; transform:rotate(90deg); margin-left:-5px; transition: all 1s ease-in-out}
+
+.classmore:hover .line1{transform: rotate(180deg); background-color:#0072ff}
+.classmore:hover .line2{transform: rotate(270deg); background-color:#0072ff}
+
+
+.classSlideWrap{width:100%; position: relative}
+.classSlideWrap .classSlide{width:1200px; height: 200px; overflow: hidden; position: relative}
+.classList{width:3690px; height: 200px; position: absolute; left:0; top:0}
+.classList li{position: relative; width:380px; height: 200px; border:2px solid #555; float: left; margin-right:30px; transition: border 0.8s ease-in-out}
+.classList li:last-child{margin-right:0}
+
+.classList li:hover{border:2px solid #0072ff;}
+.classList li:hover em{opacity:0}
+.classList li:hover .view{bottom:50px;}
+
+
+.classList a{display:block; text-align: center; text-decoration: none;}
+
+.classList a strong{color:#0072ff; font-size:18px; padding-top:50px; display:block;}
+.classList a span{font-weight: 500}
+.classList a em{display:block; margin-top:10px; opacity:1; transition: opacity 0.5s ease}
+.classList .view{width:104px; height: 34px; line-height:34px; background-color:#0072ff; color:#fff; border-radius:52px; position: absolute; bottom:-50px; left:50%; margin-left:-52px; transition:bottom 0.7s ease-in-out}
+
+
+.class .classBtn{height: 20px; width:144px; position: absolute; bottom:23px; left:50%; margin-left:-72px}
+.classBtn a{display:inline-block; vertical-align: top;}
+.classBtn a .currentNum{color:#0072ff}
+
+.classBtn p{width:20px; height: 20px; font-size:0; margin-left: 7px}
+.classBtn .left{background-position: 0 -103px;}
+.classBtn .right{background-position: -20px -103px;}
+.classBtn .stop{background-position: -40px -103px;}
+.classBtn .play{background-position: -60px -103px;}
+
+.section2{width:1200px; margin:0 auto; position: relative; margin:50px 0}
+
+.noticewrap{width:800px; height: 500px; float: left; background-color:#eee; position: relative}
+
+.notice{width:800px; height: 500px; position: relative; padding:30px 0 0 60px}
+
+/*.notice > li:nth-of-type(2){display:none}*/
+.notice > li{float: left;}
+.notice > li.on > a{background-color:#0072ff;}
+.notice > li > a{display:block; width:150px; height: 50px; line-height: 50px; background-color:#555; font-size:18px; text-align: center; color:#fff; text-decoration: none; font-weight: 500}
+.noticeList{width:720px; position: absolute; top:110px; left: 60px;}
+.noticeList li{float: left; width:324px; height: 165px; background-color:#fff; margin:0 30px 30px 0}
+.noticeList li a{width:324px; height: 165px; display:block; padding:35px 30px; text-decoration: none; background-color:rgba(255,255,255,1); transition: background-color 0.2s}
+
+.noticeList li a:hover{background-color:rgba(0,0,0,0.3)}
+
+.noticeList li a .box1:before{content:'전시'; display:block; width:40px; height: 24px; line-height: 24px; background-color:#e4007f; text-align: center; color:#fff; font-size:14px}
+.noticeList li a .box2:before{content:'공연'; display:block; width:40px; height: 24px; line-height: 24px; background-color:#ba26ff; text-align: center; color:#fff; font-size:14px}
+.noticeList li a strong{display:block; font-size:18px; margin-bottom:5px}
+
+.noticemore{position: absolute; top:0; right:0}
+
+
+.aside{width:362px; height: 500px; float: left; margin-left: 30px}
+
+.snsImg a{width:181px; height: 250px; display:block; float: left; background:url(../image/sns_img.png) no-repeat; text-decoration: none; text-align: center; position: relative; color:#fff;}
+.snsImg a:nth-of-type(1){background-position:0 0;}
+.snsImg a:nth-of-type(2){background-position:-181px 0;}
+.snsImg a:nth-of-type(3){background-position:-362px 0;}
+.snsImg a:nth-of-type(4){background-position:-543px 0;}
+
+.snsGo{background-color:rgba(0,0,0,0); width:181px; height: 250px; transition:background-color 1s ease}
+
+.snsGo span{width:30px; height: 30px; display:inline-block; background:url(../image/sns_img.png) no-repeat; font-size:0; margin:80px 0 5px 0; font-size:0; opacity: 0; transition:opacity 0.5s ease}
+.snsGo p{opacity:0; transition:opacity 1s ease}
+
+.snsGo .facebook{background-position:-724px 0}
+.snsGo .instagram{background-position:-754px 0}
+.snsGo .twitter{background-position:-784px 0}
+.snsGo .youtube{background-position:-814px 0}
+
+.snsGo:hover{background-color:rgba(0,0,0,0.5);}
+.snsGo:hover span{opacity:1}
+.snsGo:hover p{opacity:1}
+
+.snsGo:hover em:before{content:''; display:inline-block; width:10px; height: 10px; border-bottom:1px solid #fff; border-right:1px solid #fff; transform:rotate(-45deg); margin-left: -23px}
+
+.snsGo:hover em{font-size:0; width:15px; height: 15px; position: absolute; left:50%; top:65%; animation:arrow 1.8s ease infinite;}
+@keyframes arrow{
+    0%{opacity:0; transform:translateX(-15px);}
+    0%{opacity:1;}
+    100%{opacity:0; transform:translateX(15px)}
+}
+
+.snsGo:hover .arrow1{animation-delay: 0}
+.snsGo:hover .arrow2{animation-delay: -0.3s}
+.snsGo:hover .arrow3{animation-delay: -0.6s}
+
+
+.noticemore{position: absolute; right:65px; top:45px; width:24px; height: 24px; text-align: center; cursor:pointer}
+.noticemore a{font-size:0}
+.noticemore .line1{display:inline-block; width: 2px; height: 24px; background-color:#555; transform:rotate(0deg); transition: all 1s ease-in-out}
+.noticemore .line2{display:inline-block; width: 2px; height: 24px; background-color:#555; transform:rotate(90deg); margin-left:-5px; transition: all 1s ease-in-out}
+
+.noticemore:hover .line1{transform: rotate(180deg); background-color:#0072ff}
+.noticemore:hover .line2{transform: rotate(270deg); background-color:#0072ff}

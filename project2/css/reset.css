@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
+
+body, div, h1, h2, h3, ul, li, a, span, p, img, em, strong, img, table, thead, tbody, tfoot, tr, th, td, form, button, label, input, header, nav, article, section, aisde, footer{margin:0; padding:0; box-sizing:border-box}
+header, nav, article, section, aisde, footer{display:block;}
+body,input{font-size:14px; font-family: 'Noto Sans KR', sans-serif; font-weight: 300; color:#333}
+
+ul{list-style:none;}
+img, fieldset, input, button{border:none;}
+em{font-style: normal}
+img, select, button, input{vertical-align: middle}
+table{border-collapse: collapse}
+
+a:link,
+a:visited{text-decoration: none; color:#333;}
+a:hover,
+a:active,
+a:focus{text-decoration: underline; color:#333;}
+
+.skip, legend{width:0px; height: 0px; overflow: hidden; line-height: 0; font-size:0; position: absolute; left:-9999em; visibility: hidden;}
+.clearfix:after{content:''; display:block; clear:both;}
+
+#skipMenu{width:100%; position: absolute; z-index:999}
+#skipMenu a{width:100%; display:block; text-align: center; background-color:#555; color:#fff; height: 30px; line-height: 30px; position: absolute; top:-100px}
+
+#skipMenu a:hover,
+#skipMenu a:active,
+#skipMenu a:focus{position: absolute; top:0;}
+
+.ctrl{background: url(../image/ctrl.png) no-repeat;}

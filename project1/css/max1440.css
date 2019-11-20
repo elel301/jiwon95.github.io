@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import url(reset.css);
+    
+@media all and (max-width:1440px){
+    .visual,
+    .visualList li img{height:394px}
+    
+    .bestItemList ul > li > a{height:324px;}
+    
+    .collection .photo{height:315px}
+    .collection .photoOn ul{height:483px}
+    
+    .hotList > li > a,
+    .nowList > li > a{height:432px}
+    
+    .aside > div{height:280px; line-height:280px;}
+    
+    .contact a{padding-top:15px}
+    
+    #footer{height:110px; padding:15px 30px; line-height:20px;}
+    .footerLink .snsLink a,
+    .footerLink .snsLink a:hover{background-size:80%; margin:0;}
+}

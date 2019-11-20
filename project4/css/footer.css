@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.footerwrap{width:100%; height:150px; background-color:#eee}
+#footer{width:1200px; margin:0 auto; padding:40px 0}
+
+.footerLogo{font-weight:600}
+.footerList{margin-top:10px;}
+.footerList li{float:left;}
+.footerList li:before{content:''; display:inline-block; width:1px; height:14px; background-color:#555; margin:-4px 10px;}
+.footerList li:first-child:before{display:none}

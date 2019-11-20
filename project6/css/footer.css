@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#footer{margin-top:405px;}
+.top-footer{width:100%; border:1px solid #d9d9d9;}
+.top-footer>div{width:1440px; margin:0 auto; padding:0 30px;}
+
+.footerList{float:left;}
+.footerList li{float:left; padding:18px 0; margin-right:20px;}
+.footerList li:last-child{margin-right:0;}
+.footerList li em{color:#83ce33;}
+
+.snsBtn{float:left; margin-left:252px;}
+.snsBtn li{display:inline-block; margin-right:18px;}
+.snsBtn li a{display:block; font-size:0; width:18px; height:18px; background:url(../image/footerBtn.png) no-repeat 0 0;}
+.snsBtn .facebook{background-position:-18px 0;}
+.snsBtn .Tstory{background-position:-36px 0;}
+
+.familySite{float:right; position:relative;}
+.familySite:hover .familyList{display:block;}
+.familySite:hover a.familyBox{background-color:#70c416;}
+
+a.familyBox{width:166px; height:58px; display:block; padding:16px 0 0 20px; background-color:#83ce33; color:#fff; transition:background-color 0.3s ease;}
+.familyBox .plus{margin-left:48px;}
+
+.familyList{width:100%; position:absolute; top:-560px; display:none;}
+
+.familyList>li{border:1px solid #d9d9d9; padding:20px; background-color:#fff; font-size:12px;}
+.familyList span{color:#83ce33; display:block; margin-bottom:10px; font-weight:500;}
+.familyList li ul li{line-height:20px;}
+.familyList li ul li:hover{text-decoration:underline;}
+
+.bottom-footer{width:1440px; margin:0 auto; position:relative; padding:50px 30px;}
+
+.footerLogo{float:left; width:170px; height:26px; background:url(../image/footerLogo.png) no-repeat 0 0; font-size:0; margin-right:30px;}
+.copy{float:left;}
+.copy span{display:inline-block; padding-right:20px;}
+.copy span:last-child{padding-right:0;}
+.copy .tel em{font-size:24px; color:#df1818;}
+
+.webMark{float:right;}
+.webMark span{display:inline-block; font-size:0; vertical-align:top;}
+.webMark span:first-child{width:64px; height:49px; background:url(../image/footerBtn.png) no-repeat 0 -18px; cursor:pointer;}
+.webMark span:last-child{width:49px; height:49px; background:url(../image/footerBtn.png) no-repeat -64px -18px; margin-left:15px;}

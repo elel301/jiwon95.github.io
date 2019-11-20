@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+#container{width:1200px; margin:0 auto; overflow: hidden}
+
+.subsection1{width:189px; height: 996px; padding:50px 0 0 30px; border-right:1px solid #b7b7b7; float: left}
+.subsection1 h3{font-size:18px; color:#0362ff; margin-bottom:70px;}
+
+.menuList li a{font-size:14px; line-height: 44px}
+
+
+.subsection2{float: right; width:840px; height: 996px; padding:50px 70px}
+.subsection2 h3{font-size:24px; color:#0362ff; margin-bottom:50px;}
+
+.subTitle{width:811px;}
+.subTitle:after{content:''; display:block; clear:both}
+.subTitle li{float: left; background:url(../images/submain_icon.jpg) no-repeat; margin-left: 13px;}
+
+.subTitle li:first-child,
+.subTitle li:first-child+li+li+li+li{margin-left:0;}
+
+.subTitle li a{display:block; width:193px; height: 107px;}
+.subTitle li a span{font-size:0}
+
+.subTitle .subList1{background-position:0 0;}
+.subTitle .subList2{background-position: -206px 0;}
+.subTitle .subList3{background-position: -412px 0;}
+.subTitle .subList4{background-position: -618px 0;}
+.subTitle .subList5{background-position: 0 -117px;}
+.subTitle .subList6{background-position: -206px -117px;}
+.subTitle .subList7{background-position: -412px -117px;}
+.subTitle .subList8{background-position: -618px -117px;}
+
+.submb{margin-bottom:10px;}
+
+
+.choicefrm{width:810px;}
+.choicefrm fieldset{overflow: hidden; margin:30px 0; border-top:1px solid #b7b7b7; border-bottom:1px solid #b7b7b7; line-height: 44px; padding:0 20px; font-size:14px;}
+.choiceList{float: right; display: inline;}
+.choiceList label{margin: 0 8px}
+#choice3+label{margin-right:30px;}
+.choiceList button{margin-top:-3px;}
+.choiceList button a{display:block; width:73px; height: 34px; line-height: 34px; background-color:#0362ff; color:#fff; font-size:14px;}
+
+.contactTable{text-align: center; font-size:14px;}
+.contactTable tr{line-height: 55px; border-right: none;}
+.contactTable th, .contactTable td{border:1px solid #b7b7b7; border-right:none;}
+.contactTable td{border-top:none;}
+.contactTable th:first-child, .contactTable td:first-child{border-left: none;}

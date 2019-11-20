@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+#footer{width:100%;}
+
+.shoutcutWrap{position: relative}
+
+.shoutcut{height: 60px; background-color:#626262}
+.shoutMenu{width:1200px; margin:0 auto; overflow: hidden;}
+.shoutMenu > .shoutIcon{background: url(../images/shortcut_Btn.png) no-repeat 257px 24px; float: left; width: 300px;}
+.shoutMenu .shoutIcon > a{font-size:18px; color:#fff; padding-left: 30px; display:block; line-height: 60px; text-decoration:none;}
+
+.shoutIcon .shoutList{position: absolute; bottom:60px; border: 1px solid #626262; width:300px; background-color:#fff; display:none;}
+.shoutIcon .shoutList li a{font-size:14px; display: block; line-height: 44px; padding:0 30px;}
+.shoutIcon:hover .shoutList{display:block}
+
+.footerWrap{width:100%;}
+
+.footerMenu{width:1200px; height: 128px; margin:0 auto; position: relative; overflow:hidden}
+.footerLogo{width:176px; margin:45px 30px 30px 0; float: left}
+
+.addMenu{width:930px; margin-top:20px;}
+.addMenu .addList{overflow:hidden;}
+.addMenu .addList li{overflow:hidden; float:left; margin-left:10px}
+.addMenu .addList li:first-child{margin-left:0;}
+.addMenu .addList li a{font-size:14px; text-decoration:none;}
+
+.addMenu .add{margin-top:15px;}
+.addMenu .webLogo{position: absolute; bottom:20px; right: 30px}

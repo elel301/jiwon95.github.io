@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+#wrapper{width:100%; position: relative;}
+#header{width:100%; height: 78px; position: relative; background-color:#fff; transition:all 1s ease}
+#header.fixed{position: fixed; z-index: 999; height:48px;}
+
+.infoWrap{width:1200px; margin:0 auto; height: 30px; line-height: 30px; font-size:12px; position: relative;}
+.info{position: absolute; top:0; right:0;}
+.info li{float: left; margin-right: 20px;}
+.info li:last-child{margin-right:0}
+.info li a{text-decoration: none}
+.info li a:hover{font-weight: 500}
+
+.gnbWrap{width:1200px; margin:0 auto; position: relative; height: 48px;}
+.header_logo{background:url(../image/header_logo.jpg) no-repeat 0 0; width:79px; height: 35px; font-size:0; float: left; cursor:pointer}
+
+.gnb{width:800px; height: 48px; float: left; margin-left:160px}
+.gnb .gnb1eth > li{float: left; width:100px; height: 48px; line-height: 48px; text-align: center;}
+.gnb .gnb1eth > li > a{color:#000000; font-weight: 500; text-decoration: none}
+.gnb .gnb1eth > li:after{content:'';  display:block; width:0px; height:4px; background-color:#e4007f; margin-top:-4px; margin-left:50px; transition: all 0.4s ease}
+.gnb .gnb1eth > li:hover:after{width:100px; margin-left: 0}
+
+.subMenu .subImg{position: absolute; left:0; top:48px; z-index: 997; width:239px; height: 250px; display:none;}
+.subMenu .subImg p{width:239px; height: 250px; line-height: 250px; color:#fff; font-size:18px; font-weight: 500}
+
+.subMenu .subImg.sub1{background:url(../image/gnb_subimg1.jpg) no-repeat 0 0;}
+.subMenu .subImg.sub2{background:url(../image/gnb_subimg2.jpg) no-repeat 0 0;}
+.subMenu .subImg.sub3{background:url(../image/gnb_subimg3.jpg) no-repeat 0 0;}
+.subMenu .subImg.sub4{background:url(../image/gnb_subimg4.jpg) no-repeat 0 0;}
+.subMenu .subImg.sub5{background:url(../image/gnb_subimg5.jpg) no-repeat 0 0;}
+.subMenu .subImg.sub6{background:url(../image/gnb_subimg6.jpg) no-repeat 0 0;}
+.subMenu .subImg.sub7{background:url(../image/gnb_subimg7.jpg) no-repeat 0 0;}
+.subMenu .subImg.sub8{background:url(../image/gnb_subimg8.jpg) no-repeat 0 0;}
+
+.gnb .gnb2deth{position: absolute; top:48px; z-index: 997; width:100px; height: 250px; display:none;}
+.gnb .gnb2deth li{width:100px; height: 40px; line-height: 40px}
+.gnb .gnb2deth li a{font-size:12px; text-decoration: none}
+
+.gnb .gnb_bg{width:1200px; height: 250px; background-color:#f6f6f6; position: absolute; top:48px; left:0; border:1px solid #626262; z-index: 996; display:none;}
+
+.searchbar{width:30px; height: 30px; line-height: 24px; float: right; position: relative; margin-top:9px;}
+.searchText{position: absolute; top:0px; right: 0; width:20px; height: 30px; border:1px solid #e0e0e0; border:1px solid rgba(224,224,224,0); transition: all 0.5s ease-in-out}
+.searchBtn{position: absolute; top:8px; right: 0; width:14px; height: 13px; font-size:0; display:block; cursor: pointer; line-height: 13px; transition: all 0.5s ease}
+
+.searchbar:hover .searchText{width:140px; border:1px solid rgba(224,224,224,1); opacity:1; border-radius:25px; padding-left:10px; font-size:10px}
+.searchbar:hover .searchBtn{margin-right: 10px}

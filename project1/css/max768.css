@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import url(reset.css);
+
+@media all and (max-width:768px){
+    #header,
+    #container,
+    #footer{margin-left:0; width:100%;}
+    #gnb{position:absolute; left:-30%; width:30%;}
+    
+    .M_Close,
+    .M_Text,
+    .gnbMenu .M_gnbMenu,
+    .M_logo{display:block;}
+    
+    .headerLogo,
+    .event,
+    .searchText,
+    .infoMenu,
+    .notice ul li .date,
+    .footerList{display:none;}
+    
+    .M_menu{display:block; padding-top:22px;}
+    
+    .search{width:25%; height:100%; float:right; padding:0}
+    .searchBtn{display:block; background-size:100%; top:35%; right:30px}
+    
+    .visual,
+    .visualList li img{height:330px;}
+    
+    .bestItemList ul{width:366.6666%}
+    .bestItemList ul > li > a{height:255px;}
+    
+    .collection .photo{height:187px;}
+    .collection .txt .tit{line-height:34px;}
+    .collection .photoOn ul{height:340px;}
+    
+    .hotListwrap .hotList{width:450%;}
+    .nowListwrap .nowList{width:150%;}
+    .hotList > li > a,
+    .nowList > li > a{height:384px;}
+    
+    .aside > div{height:168px; line-height:168px;}
+    
+    .notice{width:76%; padding:0 20px}
+    .notice .noticeTit{width:35%;}
+    .notice ul{width:70%; left:35%;}
+    
+    .contact{width:24%}
+    .customer:before{background-size:40%; margin-top:0}
+    .shop:before{background-size:35%; margin-top:0}
+    
+    #footer{height:100px; line-height:20px}
+    .footerLink ul{width:100%; text-align:center;}
+    .footerLink .snsLink{width:100%; text-align:center; margin:0}
+}

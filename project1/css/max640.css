@@ -1,0 +1,20 @@
+@charset "utf-8";
+@import url(reset.css);
+
+@media all and (max-width:640px){
+    .visual,
+    .visualList li img{height:380px;}
+    
+    .bestItemList ul > li > a{height:213px;}
+    
+    .collection .photo{height:156px;}
+    .collection .txt .tit{line-height:30px;}
+    .collection .photoOn ul{height:300px;}
+    
+    .hotList > li > a,
+    .nowList > li > a{height:320px;}
+    
+    .aside > div{width:100%; height:320px; line-height:320px}
+    
+    .siteMap{display:none;}
+}

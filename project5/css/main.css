@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import url(reset.css);
+
+/*header*/
+body,html{overflow-x: hidden}
+
+#wrapper{width:100%; height:100%; position: relative; overflow:hidden}
+#header{width:100%; position: relative; height: 48px; line-height: 48px;}
+
+h1{position: absolute; left:50%; margin-left:-41px}
+.gnb{float: left; margin:17px 0 0 4%}
+.search{float: right; margin:1px 4% 0 0}
+
+.menuIcon{display:block; width:20px; height: 14px;  line-height:14px; position:relative}
+.menuIcon span{width:20px; height: 2px; background-color:#000; display:block; margin-top:4px; transition:all 0.3s ease}
+
+.menuIcon span.close:nth-of-type(1){display:none;}
+.menuIcon span.close:nth-of-type(2){transform:rotate(-45deg); position: absolute; top:0; margin-top:8px;}
+.menuIcon span.close:nth-of-type(3){transform:rotate(45deg); position: absolute; top:0; margin-top:8px;}
+
+.gnbMenu{width:100%; height: 100vh; background-color:#fff; position: absolute; top:48px; left:0; z-index: 999; display:none}
+.gnbMenu.on{display:block;}
+.gnbMenu li{height: 50px; line-height: 50px; padding-left: 4%}
+.gnbMenu li:first-child{background-color:#eee;}
+
+/*main*/
+#container{width:100%; position: relative}
+.CF{width:100%; height: 190px; position:relative;}
+iframe{width:100%; height:100%;}
+
+.product{width:100%; position: relative}
+.product > section{width:100%; position: relative; margin:3% 4%}
+
+.productTit{width:25%; float: left;}
+.productTit .more{display:block; margin-top:10px; border:1px solid #518565; border-radius:3px; width:41.1111px; text-align: center; padding:3.2258% 0}
+
+.productList{width:75%; overflow-x:auto; float: left}
+.productList ul{width:157%}
+.productList ul > li{float: left; width:20%;}
+.productList ul li:first-child{margin-left:0;}
+
+.productList ul > li > a{width:100%; height: 100%; display:block}
+.productList ul > li > a > img{width:100%; height: 100%}
+
+.productView{width:100%;}
+.productView img{width:100%; height: 100%}
+.productText{margin:3% 4%;}
+.productText em{display:block; margin-top:5px}
+.productText p{margin-top:10px}
+
+.how-to{width:100%; border-top:1px solid #eee;}
+.how-to h3{margin:3% 4%}
+
+.how-toImg{width:68.6111%; float: left; margin-right:2.777%}
+.how-toImg img{width:100%; height: 100%;}
+.how-toImg dl{margin:4.7% 6.7%}
+.how-toImg dt{margin-bottom:10px;}
+.how-toImg dd{line-height: 0.75rem}
+
+.how-toList{width:28.6112%; float: left}
+.how-toList a{display:block;}
+.how-toList a img{width:100%; height: 100%}
+
+.magazine{width:100%; border-top:1px solid #eee;}
+.magazine h3{margin:3% 4%}
+
+.magazinewrap{overflow-x: auto;}
+.magazine ul{width:133%; margin-left:4%}
+.magazine ul li{float: left; width:22.223%; margin:0 0 3% 2.777%}
+.magazine ul li:first-child{margin-left:0}
+
+.magazineList{}
+.magazineList img{width:100%; height: 100%}
+.magazineList p{margin-top:10px}
+.magazineList em{display:block; line-height: 0.75rem; margin-top:5px}
+
+.moment{width:100%; border-top:1px solid #eee;}
+.moment h3{margin:3% 4%}
+.moment ul{width:92%; margin-left: 4%}
+.moment ul li{float: left; width:50%;}
+.moment ul li a img{width:100%; height:100%}
+
+/*footer*/
+#footerwrap{height:82px; margin:10px 4%}
+.footerList{margin-top:10px;}
+.footerList li{float: left; margin-left:1%}
+.footerList li:first-child{margin-left:0}
+
+.footer{width:100%; margin-top:10px}
+.sns{float: right}

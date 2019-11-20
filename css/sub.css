@@ -1,0 +1,51 @@
+@charset 'utf-8';
+@import url(reset.css);
+
+#wrapper{width:100%; height:100vh; position:relative; overflow:hidden;}
+#wrapper>div{width:100%; height:50%;}
+.sub1{background:url(../images/sub1_bg.jpg) no-repeat 0 0/100%;}
+.sub2{background:url(../images/sub2_bg.jpg) no-repeat 0 0/100%;}
+.sub3{background:url(../images/sub3_bg.jpg) no-repeat 0 0/100%;}
+.sub4{background:url(../images/sub4_bg.jpg) no-repeat 0 0/100%;}
+.sub5{background:url(../images/sub5_bg.jpg) no-repeat 0 0/100%;}
+.sub6{background:url(../images/sub6_bg.jpg) no-repeat 0 0/100%;}
+
+#container{width:62.5%; margin:0 auto; padding-top:150px;}
+
+.viewOpen{position:relative;}
+
+/*visualList*/
+.visualList{margin-top:30px;}
+.visualList a{width:13.3333%; display:block; padding:10px 20px; color:#fff; text-decoration:none;}
+.visualList a.on{border-radius:30px; background-color:#4169e1;}
+
+/*visual*/
+.visual li span{position:absolute; left:25%; top:0; width:75%; height:780px; overflow:scroll; border:2px solid #d9d9d9; display:none;}
+.visual li.on span{display:block;}
+
+.visual li span img{width:100%;}
+
+.sub1 .visual li:nth-of-type(1) span{overflow:auto; border:none;}
+.sub1 .visual li:nth-of-type(1) span:nth-of-type(1){width:72.3333%; margin-top:0}
+.sub1 .visual li:nth-of-type(1) span:nth-of-type(2){width:32%; margin-top:20.3703%; margin-left:-16%}
+.sub1 .visual li:nth-of-type(1) span:nth-of-type(3){width:14.16666%; margin-top:37.3148%; margin-left:64.25%}
+
+.sub1 .visual li:nth-of-type(1) span:nth-of-type(1) img{width:100%;}
+.sub1 .visual li:nth-of-type(1) span:nth-of-type(2) img{width:100%;}
+.sub1 .visual li:nth-of-type(1) span:nth-of-type(3) img{width:100%;}
+
+.sub5 .visual li span{width:30%; height:640px; margin-left:22.5%;}
+.sub5 .visual li span img{width:100%;}
+
+/*visualBtn*/
+.visualBtn a{position:absolute; top:736px; left:0; display:none; padding:10px 20px;}
+.visualBtn a.on{display:block;}
+.visualBtn a.on:after{content:''; display:inline-block; width:20px; height:20px; background:url(../images/cursor.png) no-repeat 0 0; position:absolute; top:60px; margin-left:50px; animation:mouseCursor 4s linear infinite;}
+
+@keyframes mouseCursor{
+    0%{top:60px; margin-left:50px;}
+    20%{top:20px; margin-left:-10px;}
+    40%{top:20px; margin-left:-10px; opacity:0;}
+    60%{top:20px; margin-left:-10px; opacity:1;}
+    100%{top:20px; margin-left:-10px; opacity:1;}
+}

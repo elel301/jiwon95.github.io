@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+HK:100,300,400,500,700,900&display=swap');
+
+body,div,h1,h2,h3,form,fieldset,legend,select,option,ul,li,a,img,p,span,em,strong,header,footer,article,section,aside,iframe{margin:0; padding:0; box-sizing:border-box}
+header,footer,article,section,aside{display:block}
+
+html,body,select,input,button{font-size:14px; font-family:'Noto Sans HK', sans-serif; color:#555; font-weight: 400}
+img,fieldset,select,input{border:none;}
+ul{list-style:none;}
+em{font-style:normal;}
+
+a:link,
+a:visited{text-decoration:none; color:#555}
+a:hover,
+a:active,
+a:focus{text-decoration:none; color:#555}
+
+.skip,legend{width:1px; height: 1px; overflow: hidden; line-height: 0; font-size:0; position: absolute; left:-9999px}
+
+h3{color:#001983}
+.px28{font-size:2rem}
+.px18{font-size:1.285714285714286rem}
+.clearfix:after{content:''; display:block; clear:both}
+
+#skipMenu a{display:block; width:100%; height: 40px; padding-top:4px; text-align: center; font-size:18px; background-color:#555; color:#fff; position: absolute; top:-100px; z-index: 999}
+#skipMenu a:hover,
+#skipMenu a:active,
+#skipMenu a:focus{position: absolute; top:0}

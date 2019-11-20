@@ -1,0 +1,68 @@
+@charset 'utf-8';
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+
+/*sub1css*/
+#container{width:1200px; margin:0 auto; overflow: hidden}
+
+.section1{width:189px; height:996px; padding:50px 0 0 30px; border-right:1px solid #b7b7b7; float: left}
+.section1 h3{font-size:18px; color:#0362ff; margin-bottom:50px;}
+.menuList li a{font-size:14px; line-height: 44px}
+
+.section2{float: right; width:840px; height:996px; padding:50px 70px}
+.section2 h3{font-size:24px; color:#0362ff; margin-bottom:50px;}
+
+.subList{width:811px;}
+.subList:after{content:''; display:block; clear:both}
+.subList li{float: left; background:url(../images/subIcon.jpg) no-repeat; margin-left: 13px;}
+
+.subList li:first-child,
+.subList li:first-child+li+li+li+li{margin-left:0;}
+.subList li a{display:block; width:193px; height: 107px;}
+.subList li a span{font-size:0}
+
+.subList .subIcon1{background-position:0 0;}
+.subList .subIcon2{background-position: -206px 0;}
+.subList .subIcon3{background-position: -412px 0;}
+.subList .subIcon4{background-position: -618px 0;}
+.subList .subIcon5{background-position: 0 -117px;}
+.subList .subIcon6{background-position: -206px -117px;}
+.subList .subIcon7{background-position: -412px -117px;}
+.subList .subIcon8{background-position: -618px -117px;}
+.mb10{margin-bottom:10px;}
+
+.choicefrm{width:810px;}
+.choicefrm fieldset{overflow: hidden; margin:30px 0; border-top:1px solid #b7b7b7; border-bottom:1px solid #b7b7b7; line-height: 44px; padding:0 20px; font-size:14px;}
+.choiceList{float: right; display: inline;}
+.choiceList label{margin: 0 8px}
+#choice3+label{margin-right:20px;}
+.choiceList button{font-size:10px; padding:7px 20px; background-color:#0362ff; color:#fff; cursor:pointer;}
+
+.contact{text-align: center; font-size:14px;}
+.contact tr{line-height: 55px; border-right: none;}
+.contact th, .contact td{border:1px solid #b7b7b7; border-right:none;}
+.contact td{border-top:none;}
+.contact th:first-child, .contact td:first-child{border-left: none;}
+
+/*sub2 css*/
+.sub2{padding:144px 0;}
+
+.loginTxt{text-align:center;}
+.loginTxt li:first-child{font-size:24px; margin-bottom:20px; color:#036eff;}
+.loginTxt li:last-child{font-size:18px; margin-bottom:40px;}
+
+.loginList{width:500px; margin:0 auto;}
+.loginList label,
+.loginList input[type="text"],
+.loginList button{font-size:18px;}
+
+.useridsave input[type="checkbox"],
+.useridsave label{vertical-align:baseline}
+
+.loginList input[type="text"]{width:500px; height:20px; padding:10px 20px;}
+.loginList button{display:block; width:544px; height:44px; line-height:44px; border:none; background-color:#036eff; color:#fff;}
+
+.loginlogo{margin:0 0 60px 204px;}
+.userid{margin-bottom: 20px;}
+.useridsave{margin:20px 0;}
