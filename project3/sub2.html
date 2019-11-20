@@ -9,7 +9,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content=""/>
 <meta name="author" content=""/>
-<link rel="stylesheet" type="text/css" href="css/submain2.css"/>
+<link rel="stylesheet" type="text/css" href="css/sub.css"/>
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 </head>
@@ -63,7 +63,7 @@
                     <fieldset>
                         <legend>통합검색</legend>
                         <label for="search" class="skip">검색어입력</label>
-                        <input type="text" name="search" class="searchBox" value="검색어를 입력하세요"/>
+                        <input type="text" id="search" name="search" class="searchBox" value="검색어를 입력하세요"/>
                         
                         <a href="#" class="searchBtn"><img src="images/icon_search.png" alt="검색하기" title="검색하기"/></a>
                     </fieldset>
@@ -75,7 +75,7 @@
                 <div class="gnbMenuwrap">
                     <ul class="gnbMenu">
                         <li>
-                            <a href="sub.html">전자민원</a>
+                            <a href="sub1.html">전자민원</a>
                             <ul class="gnb1eth">
                                 <li><a href="#">전자민원창구</a></li>
                                 <li><a href="#">경기에듀콜센터</a></li>
@@ -93,7 +93,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="sub.html">주민참여</a>
+                            <a href="sub1.html">주민참여</a>
                             <ul class="gnb1eth">
                                 <li><a href="#">자율참여공간</a></li>
                                 <li><a href="#">주민참여예산</a></li>
@@ -122,37 +122,34 @@
     </div><!--headerWrap e-->
     
     
-    <div id="container">
-       
+    <div id="container" class="sub2">
+        <ul class="loginTxt">
+            <li>경기도교육청에 오신 것을 환영합니다.</li>
+            <li>경기도교육청을 포함한 부천시의 다양한 홈페이지를 하나의 아이디로 편리하게 이용하실 수 있습니다.</li>
+        </ul>
         <form method="post" name="loginfrm" action="#" class="loginList">
-                     
-            
-            <h3><img src="images/logo_loginlogo.png" alt="경기도교육청" /></h3>
-        
             <fieldset>
-            <legend>로그인창</legend>
-            
-            <ul >
-            <li class="userid">
-            <label for="userid" class="skip">아이디</label>
-            <input type="text" id="userid" name="userid" value="아이디"/>
-            </li>
-            
-            <li class="userpass">
-            <label for="userpass" class="skip">비밀번호</label>
-            <input type="text" id="userpass" name="userpass" value="비밀번호"/>
-            </li>
-            
-            <li class="useridsave">
-            <input type="checkbox" id="useridsave" name="useridsave"/>
-            <label for="useridsave">아이디저장</label>
-            </li>
-            
-            <li class="userlogin">
-            <button>로그인</button>
-            </li>
-            
-            </ul>
+                <legend>로그인창</legend>
+                <ul>
+                    <li class="userid">
+                        <label for="userid" class="skip">아이디</label>
+                        <input type="text" id="userid" name="userid" value="아이디"/>
+                    </li>
+
+                    <li class="userpass">
+                        <label for="userpass" class="skip">비밀번호</label>
+                        <input type="text" id="userpass" name="userpass" value="비밀번호"/>
+                    </li>
+
+                    <li class="useridsave">
+                        <input type="checkbox" id="useridsave" name="useridsave"/>
+                        <label for="useridsave">아이디저장</label>
+                    </li>
+
+                    <li class="userlogin">
+                        <button>로그인</button>
+                    </li>
+                </ul>
             
             </fieldset>
         </form>

@@ -3,11 +3,12 @@
 
 #wrapper{width:100%; position:relative; overflow:hidden}
 
+.headerLogo{width:6.40625%; position:absolute; top:0; z-index:998;}
+.headerLogo a{width:100%; margin:20px 10px; display:block; font-size:0;}
+.headerLogo img{width:100%;}
+
 /*gnb 영역*/
-#gnb{width:10%; height:100%; background-color:#eee; border-right:1px solid #333; position:fixed; z-index:997}/*max-width*/
-.headerLogo{width:100%;}
-.headerLogo a{width:100%; padding:20px 10px; display:block; font-size:0;}
-.headerLogo img{width:80%;}
+#gnb{width:10%; height:100%; background-color:#eee; border-right:1px solid #333; position:fixed; z-index:997; padding-top:80px;}/*max-width*/
 
 .M_Close{position:absolute; right:10px; top:10px; width:24px; height:24px; display:none;}
 .M_Close span{display:block; width:24px; height:2px; background-color:#333; cursor:pointer; margin-top:10px;}
@@ -66,7 +67,7 @@ div.allMenu > a{color:#e51937; font-weight:500}
 .M_menu span{display:block; width:24px; height:2px; background-color:#333; margin-top:5px;}
 
 .M_logo{float:left; width:50%; display:none;}
-.M_logo a{font-size:0; display:block; margin:0 auto; width:40%; height:100%; background:url(../images/M_headerLogo.png) no-repeat center; background-size:80%;}
+.M_logo a{font-size:0; display:block; margin:0 auto; width:40%; height:100%; background:url(../images/M_headerLogo.png) no-repeat center; background-size:60%;}
 
 .search{width:50%; height:100%; float:left;}
 .searchFrm{width:100%; height:100%}

@@ -204,7 +204,7 @@
 .classBtn .stop{background-position: -40px -103px;}
 .classBtn .play{background-position: -60px -103px;}
 
-.section2{width:1200px; margin:0 auto; position: relative; margin:50px 0}
+.section2{width:1200px; margin:50px auto; position: relative;}
 
 .noticewrap{width:800px; height: 500px; float: left; background-color:#eee; position: relative}
 
@@ -220,8 +220,8 @@
 
 .noticeList li a:hover{background-color:rgba(0,0,0,0.3)}
 
-.noticeList li a .box1:before{content:'전시'; display:block; width:40px; height: 24px; line-height: 24px; background-color:#e4007f; text-align: center; color:#fff; font-size:14px}
-.noticeList li a .box2:before{content:'공연'; display:block; width:40px; height: 24px; line-height: 24px; background-color:#ba26ff; text-align: center; color:#fff; font-size:14px}
+.noticeList li a .box1:before{content:'전시'; display:block; width:40px; height: 24px; line-height: 24px; background-color:#ba26ff; text-align: center; color:#fff; font-size:14px}
+.noticeList li a .box2:before{content:'공연'; display:block; width:40px; height: 24px; line-height: 24px; background-color:#e4007f; text-align: center; color:#fff; font-size:14px}
 .noticeList li a strong{display:block; font-size:18px; margin-bottom:5px}
 
 .noticemore{position: absolute; top:0; right:0}

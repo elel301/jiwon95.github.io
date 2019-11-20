@@ -53,23 +53,22 @@ iframe{width:100%; height:100%;}
 
 .how-toImg{width:68.6111%; float: left; margin-right:2.777%}
 .how-toImg img{width:100%; height: 100%;}
-.how-toImg dl{margin:4.7% 6.7%}
+.how-toImg dl{margin:4.7% 5.8266%;}
 .how-toImg dt{margin-bottom:10px;}
 .how-toImg dd{line-height: 0.75rem}
 
-.how-toList{width:28.6112%; float: left}
-.how-toList a{display:block;}
-.how-toList a img{width:100%; height: 100%}
+.how-toList{width:28.6112%; height:100%; float: left}
+.how-toList a{display:block; height:50%;}
+.how-toList a img{width:100%; height:100%}
 
 .magazine{width:100%; border-top:1px solid #eee;}
 .magazine h3{margin:3% 4%}
 
 .magazinewrap{overflow-x: auto;}
-.magazine ul{width:133%; margin-left:4%}
-.magazine ul li{float: left; width:22.223%; margin:0 0 3% 2.777%}
-.magazine ul li:first-child{margin-left:0}
+.magazine ul{width:133.3333%; padding:0 4% 3% 4%;}
+.magazine ul li{float: left; width:22.774%; margin-right:2.967%;}
+.magazine ul li:last-child{margin-right:0;}
 
-.magazineList{}
 .magazineList img{width:100%; height: 100%}
 .magazineList p{margin-top:10px}
 .magazineList em{display:block; line-height: 0.75rem; margin-top:5px}

@@ -16,3 +16,6 @@ a:focus{text-decoration:underline; color:#000;}
 
 .clearfix:after{content:''; display:block; clear:both;}
 .skip{width:1px; height:1px; overflow:hidden; line-height:0; font-size:0; position:absolute; left:-9999;}
+
+#header{width:100%; position:absolute; top:0; z-index:999;}
+.headerLogo a{float:left; margin-left:18.75%; margin-top:70px; color:#fff; text-decoration:none;}
