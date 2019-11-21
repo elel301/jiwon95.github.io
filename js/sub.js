@@ -17,5 +17,10 @@ $(document).ready(function(){
             $('.visualBtn a:last-child').addClass('on');
         }
     }
-        
+    
+    (function($){
+        $(window).on("load",function(){
+            $(".visual li span").mCustomScrollbar();
+        });
+    })(jQuery);
 })
