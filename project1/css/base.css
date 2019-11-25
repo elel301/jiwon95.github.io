@@ -3,8 +3,8 @@
 
 #wrapper{width:100%; position:relative; overflow:hidden}
 
-.headerLogo{width:6.40625%; position:absolute; top:0; z-index:998;}
-.headerLogo a{width:100%; margin:20px 10px; display:block; font-size:0;}
+.headerLogo{width:6.40625%; position:fixed; top:0; z-index:998;}
+.headerLogo a{width:90px; margin:20px 10px; display:block; font-size:0;}
 .headerLogo img{width:100%;}
 
 /*gnb 영역*/
