@@ -21,6 +21,7 @@ $(document).ready(function(){
     (function($){
         $(window).on("load",function(){
             $(".visual li span").mCustomScrollbar();
+            $(".sub .visual li:first-child span").mCustomScrollbar('disable');
         });
     })(jQuery);
 })
