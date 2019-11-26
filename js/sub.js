@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    $('.visualList a').click(function(){
+    $('.visualList a').click(function(e){
+        e.preventDefault();
         visual($(this).index());
     })
     
