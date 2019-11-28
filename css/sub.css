@@ -23,7 +23,7 @@
 .visual li span{position:absolute; left:25%; top:0; width:75%; height:780px; display:none;}
 .visual li.on span{display:block;}
 
-.visual li span img{width:100%;}
+.visual li span img{width:96.6666%;}
 
 .sub1 .visual li:nth-of-type(1) span{overflow:auto; border:none;}
 .sub1 .visual li:nth-of-type(1) span:nth-of-type(1){width:72.3333%; margin-top:0}
