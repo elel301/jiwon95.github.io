@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#wrapper{max-width:100%;}
+#wrapper{max-width:100%; min-width:1200px;}
 #headerWrap{max-width:100%}
 
 /*infoWrap s*/
