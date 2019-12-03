@@ -23,7 +23,7 @@
 .visual li span{position:absolute; left:25%; top:0; width:75%; height:780px; display:none;}
 .visual li.on span{display:block;}
 
-.visual li span img{width:100%;}
+.visual li span img{width:96.6666%;}
 
 .sub1 .visual li:nth-of-type(1) span{overflow:auto; border:none;}
 .sub1 .visual li:nth-of-type(1) span:nth-of-type(1){width:72.3333%; margin-top:0}
@@ -35,7 +35,7 @@
 .sub1 .visual li:nth-of-type(1) span:nth-of-type(3) img{width:100%;}
 
 .sub5 .visual li span{width:30%; height:640px; margin-left:22.5%;}
-.sub5 .visual li span img{width:100%;}
+.sub5 .visual li span img{width:91.6666%;}
 
 /*visualBtn*/
 .visualBtn a{position:absolute; top:736px; left:0; display:none; padding:10px 20px;}
