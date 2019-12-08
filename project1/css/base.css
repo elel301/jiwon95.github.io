@@ -4,7 +4,7 @@
 #wrapper{width:100%; position:relative; overflow:hidden}
 
 .headerLogo{width:6.40625%; position:fixed; top:0; z-index:998;}
-.headerLogo a{width:90px; margin:20px 10px; display:block; font-size:0;}
+.headerLogo a{width:100%; margin:20px 10px; display:block; font-size:0;}
 .headerLogo img{width:100%;}
 
 /*gnb 영역*/
@@ -15,7 +15,7 @@
 .M_Close span:first-child{transform:rotate(45deg);}
 .M_Close span:last-child{transform:rotate(-45deg); margin-top:-2px;}
 
-.M_Text{padding:10px; font-size:1.2857rem; font-weight:700; color:#03234c; display:none; margin-top:30px;}
+.M_Text{padding:10px; font-size:1.2857rem; font-weight:700; color:#03234c; display:none;}
 
 div.allMenu{display:block; width:100%; height:30px; line-height:30px; padding:0 10px; margin:20px 0; border-bottom:1px solid #333}
 div.allMenu > a{color:#e51937; font-weight:500}
@@ -151,10 +151,11 @@ div.allMenu > a{color:#e51937; font-weight:500}
 .productList{width:100%;}
 .productList ul{width:100%; position:relative;}
 .productList > ul > li{float:left; width:100%; font-weight:500}
-.productList > ul > li > a{width:50%; padding:15px 0; position:absolute; top:0;}
-.productList > ul > li:nth-of-type(1) > a{text-align:right; padding-right:20px;}
-.productList > ul > li:nth-of-type(2) > a{left:50%; padding-left:20px;}
-.productList > ul > li.on > a{color:#e51937}
+.productList > ul > li > span{width:50%; padding:15px 0; position:absolute; top:0;}
+.productList > ul > li:nth-of-type(1) > span{text-align:right; padding-right:20px;}
+.productList > ul > li:nth-of-type(2) > span{left:50%; padding-left:20px;}
+.productList > ul > li > span > a{display:inline-block;}
+.productList > ul > li.on > span > a{color:#e51937}
 
 
 .hotListwrap{overflow:hidden; margin-top:51px;}

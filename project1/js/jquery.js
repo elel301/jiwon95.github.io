@@ -5,32 +5,33 @@ $(document).ready(function(){
     $('.gnbMenu > li > a').click(function(e){
         e.preventDefault();
         if($(this).parent().hasClass('on') == false){
-            $('.gnbMenu > li.on').removeClass('on');
+            $('.gnbMenu > li').removeClass('on');
             $(this).parent().addClass('on');
             $('.gnbMenu > li').find('.gnb1depth').hide();
             $(this).next('.gnb1depth').show();
+            $('.gnbMenu > li').find('.gnb1depth > li').removeClass('on');
+            $('.gnbMenu > li').find('.gnb2depth').hide();
         }else{
-            $('.gnbMenu > li.on').find('.gnb1depth').hide();
-            $('.gnbMenu > li.on').find('.gnb2depth').hide();
-            $('.gnb1depth > li.on').removeClass('on');
-            $('.gnbMenu > li.on').removeClass('on');
+            $('.gnbMenu > li').removeClass('on');
+            $('.gnbMenu > li').find('.gnb1depth').hide();
+            $('.gnbMenu > li').find('.gnb1depth > li').removeClass('on');
+            $('.gnbMenu > li').find('.gnb2depth').hide();
         }
     })
     
     $('.gnb1depth > li > a').click(function(e){
         e.preventDefault();
-        $('.gnb1depth > li.on').removeClass('on');
+        $('.gnb1depth > li').removeClass('on');
         $(this).parent().addClass('on');
-        
         $('.gnb1depth > li').find('.gnb2depth').hide();
         $(this).next('.gnb2depth').show();
     })
     
     $('.M_menuIcon').click(function(){ //모바일 메뉴 열고닫기
-        $('.gnbMenu > li.on').find('.gnb1depth').hide();
-        $('.gnbMenu > li.on').find('.gnb2depth').hide();
-        $('.gnb1depth > li.on').removeClass('on');
-        $('.gnbMenu > li.on').removeClass('on');
+        $('.gnbMenu > li').find('.gnb1depth').hide();
+        $('.gnbMenu > li').find('.gnb2depth').hide();
+        $('.gnbMenu > li').find('.gnb1depth > li').removeClass('on');
+        $('.gnbMenu > li').removeClass('on');
         
         $('html').css('overflowY','hidden')
         $('#gnb').animate({
@@ -171,8 +172,7 @@ $(document).ready(function(){
         $('.bestItem .point li.on').removeClass('on');
         $('.bestItem .point li:eq('+num+')').addClass('on');
     }
-    
-    
+        
     /*collection*/
     var collectionTop=$('.collection').offset().top + $('.collection').height()/2; //컬렉션 중간길이값
     $(window).scroll(function(){
@@ -187,7 +187,6 @@ $(document).ready(function(){
         }
     })
         
-        
     /*product*/
     if(winWidth >= 769){ //width값에 따른 product point갯수
         $('.product .point li.M_point').css('display','none')
@@ -195,17 +194,17 @@ $(document).ready(function(){
         $('.product .point li.px768').css('display','inline-block')
     }
 
-    $('.productList > ul > li > a').click(function(e){
+    $('.productList > ul > li > span > a').click(function(e){
         e.preventDefault();
-        $('.productList > ul > li > a').parent().removeClass('on')
-        $(this).parent().addClass('on')
+        $('.productList > ul > li > span > a').parent().parent().removeClass('on')
+        $(this).parent().parent().addClass('on')
         
-        $('.productList > ul > li > a').next().hide()
-        $(this).next().show()
+        $('.productList > ul > li > span > a').parent().next().hide()
+        $(this).parent().next().show()
         
-        $(this).next().find('> ul').css('transform','translateX(0%)')
-        $(this).next().find('.point li.on').removeClass('on')
-        $(this).next().find('.point li:eq(0)').addClass('on')
+        $(this).parent().next().find('> ul').css('transform','translateX(0%)')
+        $(this).parent().next().find('.point li.on').removeClass('on')
+        $(this).parent().next().find('.point li:eq(0)').addClass('on')
     })
         
     var num=0; //num값 초기화
